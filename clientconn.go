@@ -29,26 +29,26 @@ import (
 	"sync/atomic"
 	"time"
 
+	"github.com/sandertungeaspoy/grpc-go/internal/backoff"
+	"github.com/sandertungeaspoy/grpc-go/internal/grpcutil"
+	iresolver "github.com/sandertungeaspoy/grpc-go/internal/resolver"
+	"github.com/sandertungeaspoy/grpc-go/internal/transport"
 	"google.golang.org/grpc/balancer"
 	"google.golang.org/grpc/balancer/base"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/connectivity"
 	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/internal/backoff"
 	"google.golang.org/grpc/internal/channelz"
 	"google.golang.org/grpc/internal/grpcsync"
-	"google.golang.org/grpc/internal/grpcutil"
-	iresolver "google.golang.org/grpc/internal/resolver"
-	"google.golang.org/grpc/internal/transport"
 	"google.golang.org/grpc/keepalive"
 	"google.golang.org/grpc/resolver"
 	"google.golang.org/grpc/serviceconfig"
 	"google.golang.org/grpc/status"
 
-	_ "google.golang.org/grpc/balancer/roundrobin"           // To register roundrobin.
-	_ "google.golang.org/grpc/internal/resolver/dns"         // To register dns resolver.
-	_ "google.golang.org/grpc/internal/resolver/passthrough" // To register passthrough resolver.
-	_ "google.golang.org/grpc/internal/resolver/unix"        // To register unix resolver.
+	_ "github.com/sandertungeaspoy/grpc-go/internal/resolver/dns"         // To register dns resolver.
+	_ "github.com/sandertungeaspoy/grpc-go/internal/resolver/passthrough" // To register passthrough resolver.
+	_ "github.com/sandertungeaspoy/grpc-go/internal/resolver/unix"        // To register unix resolver.
+	_ "google.golang.org/grpc/balancer/roundrobin"                        // To register roundrobin.
 )
 
 const (
