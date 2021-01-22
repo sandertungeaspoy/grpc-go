@@ -24,10 +24,10 @@ import (
 	"sync"
 	"time"
 
+	"github.com/sandertungeaspoy/grpc-go/internal/channelz"
+	"github.com/sandertungeaspoy/grpc-go/internal/grpcsync"
 	"google.golang.org/grpc/balancer"
 	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/internal/channelz"
-	"google.golang.org/grpc/internal/grpcsync"
 	"google.golang.org/grpc/resolver"
 	"google.golang.org/grpc/serviceconfig"
 )

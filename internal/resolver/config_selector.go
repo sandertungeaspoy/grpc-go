@@ -23,7 +23,7 @@ import (
 	"context"
 	"sync"
 
-	"google.golang.org/grpc/internal/serviceconfig"
+	"github.com/sandertungeaspoy/grpc-go/internal/serviceconfig"
 	"google.golang.org/grpc/resolver"
 )
 

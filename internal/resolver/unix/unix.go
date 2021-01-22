@@ -22,7 +22,7 @@ package unix
 import (
 	"fmt"
 
-	"github.com/sandertungeaspoy/grpc-go/transport/networktype"
+	"github.com/sandertungeaspoy/grpc-go/internal/transport/networktype"
 	"google.golang.org/grpc/resolver"
 )
 
