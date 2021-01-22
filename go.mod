@@ -12,5 +12,5 @@ require (
 	golang.org/x/oauth2 v0.0.0-20180821212333-d2e6202438be
 	golang.org/x/sys v0.0.0-20190215142949-d0b11bdaac8a
 	google.golang.org/genproto v0.0.0-20190819201941-24fa4b261c55
-	nhooyr.io/websocket v1.8.6
+// nhooyr.io/websocket v1.8.6
 )

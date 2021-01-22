@@ -44,7 +44,8 @@ import (
 	"google.golang.org/grpc/resolver"
 	"google.golang.org/grpc/serviceconfig"
 	"google.golang.org/grpc/status"
-	"nhooyr.io/websocket"
+
+	// "nhooyr.io/websocket"
 
 	_ "github.com/sandertungeaspoy/grpc-go/internal/resolver/dns"         // To register dns resolver.
 	_ "github.com/sandertungeaspoy/grpc-go/internal/resolver/passthrough" // To register passthrough resolver.
