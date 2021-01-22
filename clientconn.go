@@ -44,6 +44,7 @@ import (
 	"google.golang.org/grpc/resolver"
 	"google.golang.org/grpc/serviceconfig"
 	"google.golang.org/grpc/status"
+	"nhooyr.io/websocket"
 
 	_ "github.com/sandertungeaspoy/grpc-go/internal/resolver/dns"         // To register dns resolver.
 	_ "github.com/sandertungeaspoy/grpc-go/internal/resolver/passthrough" // To register passthrough resolver.
@@ -194,6 +195,9 @@ func DialContext(ctx context.Context, target string, opts ...DialOption) (conn *
 	if cc.dopts.copts.Dialer == nil {
 		cc.dopts.copts.Dialer = func(ctx context.Context, addr string) (net.Conn, error) {
 			network, addr := parseDialTarget(addr)
+			fmt.Println(network)
+			fmt.Println(addr)
+			// c, _, err := websocket.Dial(ctx, "ws://localhost:8080", nil)
 			return (&net.Dialer{}).DialContext(ctx, network, addr)
 		}
 		if cc.dopts.withProxy {
