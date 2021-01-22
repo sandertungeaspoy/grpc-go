@@ -32,9 +32,9 @@ import (
 	"time"
 
 	"github.com/golang/protobuf/proto"
+	"github.com/sandertungeaspoy/grpc-go/internal/grpcutil"
 	"golang.org/x/net/http2"
 	"golang.org/x/net/http2/hpack"
-	"google.golang.org/grpc/internal/grpcutil"
 
 	"github.com/sandertungeaspoy/grpc-go/internal/channelz"
 	"github.com/sandertungeaspoy/grpc-go/internal/grpcrand"
