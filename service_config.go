@@ -26,10 +26,10 @@ import (
 	"strings"
 	"time"
 
+	"github.com/sandertungeaspoy/grpc-go/internal"
+	internalserviceconfig "github.com/sandertungeaspoy/grpc-go/internal/serviceconfig"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/internal"
-	internalserviceconfig "google.golang.org/grpc/internal/serviceconfig"
 	"google.golang.org/grpc/serviceconfig"
 )
 
