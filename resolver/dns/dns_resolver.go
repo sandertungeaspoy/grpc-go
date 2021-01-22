@@ -24,7 +24,7 @@
 package dns
 
 import (
-	"google.golang.org/grpc/internal/resolver/dns"
+	"github.com/sandertungeaspoy/grpc-go/internal/resolver/dns"
 	"google.golang.org/grpc/resolver"
 )
 

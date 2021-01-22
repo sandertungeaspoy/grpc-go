@@ -30,6 +30,8 @@ import (
 	"time"
 
 	"github.com/sandertungeaspoy/grpc-go/internal/backoff"
+	"github.com/sandertungeaspoy/grpc-go/internal/channelz"
+	"github.com/sandertungeaspoy/grpc-go/internal/grpcsync"
 	"github.com/sandertungeaspoy/grpc-go/internal/grpcutil"
 	iresolver "github.com/sandertungeaspoy/grpc-go/internal/resolver"
 	"github.com/sandertungeaspoy/grpc-go/internal/transport"
@@ -38,8 +40,6 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/connectivity"
 	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/internal/channelz"
-	"google.golang.org/grpc/internal/grpcsync"
 	"google.golang.org/grpc/keepalive"
 	"google.golang.org/grpc/resolver"
 	"google.golang.org/grpc/serviceconfig"
