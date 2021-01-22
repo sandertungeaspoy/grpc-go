@@ -36,10 +36,10 @@ import (
 	"time"
 
 	"github.com/golang/protobuf/proto"
+	"github.com/sandertungeaspoy/grpc-go/internal/grpcutil"
 	"golang.org/x/net/http2"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/internal/grpcutil"
 	"google.golang.org/grpc/metadata"
 	"google.golang.org/grpc/peer"
 	"google.golang.org/grpc/stats"
